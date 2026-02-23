@@ -14,6 +14,23 @@
 
 html { scroll-behavior: smooth; }
 
+/* Background particle canvas */
+#bg-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Ensure all content sits above the canvas */
+nav, section, div#stats, footer, .mobile-menu, .cursor, .cursor-ring {
+  position: relative;
+  z-index: 1;
+}
+
 body {
   background: var(--bg);
   color: var(--text);
@@ -843,15 +860,4 @@ a.contact-info-value:hover { color: var(--accent); }
   .project-card { padding: 2rem; }
   .service-card { padding: 2rem; }
   .testimonial-card { padding: 2rem; }
-}
-
-/* Background Canvas */
-#bg-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 0; /* Keep it behind your content (hero is z-index: 1) */
-  pointer-events: none; /* Crucial: allows clicks to pass through to your actual site */
 }
