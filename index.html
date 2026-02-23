@@ -3,13 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio</title>
+  <title>Alex Carter — Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
+  <script src="main.js"></script> 
+  <script src="background.js"></script>
+
+</html>
 </head>
 <body>
 
-  <!-- Custom Cursor -->
   <div class="cursor" id="cursor"></div>
   <div class="cursor-ring" id="cursorRing"></div>
 
@@ -19,6 +22,8 @@
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#work">Work</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#services">Services</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="Menu">
@@ -30,6 +35,8 @@
   <div class="mobile-menu" id="mobileMenu">
     <a href="#about" class="mobile-link">About</a>
     <a href="#work" class="mobile-link">Work</a>
+    <a href="#experience" class="mobile-link">Experience</a>
+    <a href="#services" class="mobile-link">Services</a>
     <a href="#contact" class="mobile-link">Contact</a>
   </div>
 
@@ -64,8 +71,9 @@
     <div class="about-text">
       <p class="section-label reveal">About Me</p>
       <h2 class="reveal reveal-delay-1">Crafting digital<br/>experiences with<br/>purpose.</h2>
-      <p class="reveal reveal-delay-2">I'm a full-stack developer with 5+ years of experience turning complex problems into elegant solutions. I care deeply about the intersection of design and engineering.</p>
-      <p class="reveal reveal-delay-2">When I'm not coding, I'm exploring generative art, typography, and how digital spaces shape human behavior.</p>
+      <p class="reveal reveal-delay-2">I'm <strong>Alex Carter</strong>, a full-stack developer & UI designer based in San Francisco. With 5+ years of experience, I've shipped products used by millions — from early-stage startups to Fortune 500 companies.</p>
+      <p class="reveal reveal-delay-2">I obsess over performance, accessibility, and micro-interactions. When I'm not shipping code, I'm exploring generative art, typography, and how digital spaces shape human behaviour.</p>
+      <p class="reveal reveal-delay-2">Currently open to freelance projects and select full-time opportunities.</p>
       <div class="skills-grid reveal reveal-delay-3">
         <span class="skill-tag">React</span>
         <span class="skill-tag">TypeScript</span>
@@ -77,6 +85,8 @@
         <span class="skill-tag">AWS</span>
         <span class="skill-tag">CSS / Motion</span>
         <span class="skill-tag">Python</span>
+        <span class="skill-tag">GraphQL</span>
+        <span class="skill-tag">Docker</span>
       </div>
     </div>
   </section>
@@ -110,60 +120,228 @@
       <div class="project-card reveal">
         <div class="project-num">01 / 04</div>
         <div class="project-arrow">↗</div>
-        <div class="project-img">
-          <div class="project-img-inner">🛒</div>
-        </div>
+        <div class="project-img"><div class="project-img-inner">🛒</div></div>
         <div class="project-title">ShopFlow</div>
-        <div class="project-desc">A next-gen e-commerce platform with real-time inventory, AI-powered recommendations, and sub-100ms checkout.</div>
+        <div class="project-desc">A next-gen e-commerce platform serving 200k+ monthly users. Features real-time inventory sync, AI-powered product recommendations, and a sub-100ms checkout flow. Reduced cart abandonment by 34%.</div>
         <div class="project-tags">
           <span class="project-tag">Next.js</span>
           <span class="project-tag">Stripe</span>
           <span class="project-tag">PostgreSQL</span>
+          <span class="project-tag">Redis</span>
         </div>
       </div>
 
       <div class="project-card reveal reveal-delay-1">
         <div class="project-num">02 / 04</div>
         <div class="project-arrow">↗</div>
-        <div class="project-img">
-          <div class="project-img-inner">📊</div>
-        </div>
+        <div class="project-img"><div class="project-img-inner">📊</div></div>
         <div class="project-title">Databoard</div>
-        <div class="project-desc">Real-time analytics dashboard for SaaS companies. Handles 10M+ events/day with live charts and anomaly detection.</div>
+        <div class="project-desc">Real-time analytics dashboard for SaaS companies. Ingests 10M+ events/day with live D3 charts, anomaly detection alerts, and a customisable widget system. Used by 80+ enterprise clients.</div>
         <div class="project-tags">
           <span class="project-tag">React</span>
           <span class="project-tag">D3.js</span>
           <span class="project-tag">WebSockets</span>
+          <span class="project-tag">ClickHouse</span>
         </div>
       </div>
 
       <div class="project-card reveal reveal-delay-2">
         <div class="project-num">03 / 04</div>
         <div class="project-arrow">↗</div>
-        <div class="project-img">
-          <div class="project-img-inner">🎨</div>
-        </div>
+        <div class="project-img"><div class="project-img-inner">🎨</div></div>
         <div class="project-title">Canvas AI</div>
-        <div class="project-desc">A browser-based generative art tool using ML models to create unique visual compositions from text prompts.</div>
+        <div class="project-desc">A browser-based generative art studio using Stable Diffusion to create unique visual compositions from text prompts. Supports real-time WebGL post-processing and one-click NFT minting.</div>
         <div class="project-tags">
           <span class="project-tag">Three.js</span>
           <span class="project-tag">WebGL</span>
           <span class="project-tag">Python</span>
+          <span class="project-tag">Stable Diffusion</span>
         </div>
       </div>
 
       <div class="project-card reveal reveal-delay-3">
         <div class="project-num">04 / 04</div>
         <div class="project-arrow">↗</div>
-        <div class="project-img">
-          <div class="project-img-inner">💬</div>
-        </div>
+        <div class="project-img"><div class="project-img-inner">💬</div></div>
         <div class="project-title">ThreadSync</div>
-        <div class="project-desc">Team communication tool with end-to-end encryption, threads, and asynchronous video messages.</div>
+        <div class="project-desc">Async-first team communication tool with end-to-end encryption, threaded discussions, and async video messages. Scaled to 15k users within 3 months of launch with zero downtime.</div>
         <div class="project-tags">
           <span class="project-tag">React Native</span>
           <span class="project-tag">Node.js</span>
           <span class="project-tag">WebRTC</span>
+          <span class="project-tag">E2E Encryption</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <p class="section-label reveal">Career</p>
+    <h2 class="reveal reveal-delay-1">Where I've worked.</h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-left">
+          <div class="timeline-date">2023 — Present</div>
+          <div class="timeline-dot"></div>
+        </div>
+        <div class="timeline-right">
+          <div class="timeline-role">Senior Frontend Engineer</div>
+          <div class="timeline-company">Vercel <span class="timeline-badge">Full-time</span></div>
+          <p class="timeline-desc">Lead engineer on the dashboard team. Rebuilt the deployment pipeline UI from scratch, reducing time-to-deploy visibility from 8s to under 1s. Mentored 4 junior engineers and introduced component performance standards adopted across the org.</p>
+          <div class="timeline-stack">
+            <span>React</span><span>TypeScript</span><span>Turborepo</span><span>Radix UI</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal reveal-delay-1">
+        <div class="timeline-left">
+          <div class="timeline-date">2021 — 2023</div>
+          <div class="timeline-dot"></div>
+        </div>
+        <div class="timeline-right">
+          <div class="timeline-role">Fullstack Developer</div>
+          <div class="timeline-company">Linear <span class="timeline-badge">Full-time</span></div>
+          <p class="timeline-desc">Built core product features including the roadmap view, keyboard shortcut system, and offline sync engine. Contributed to the design system and shipped the iOS app from beta to GA with a 4.8★ App Store rating.</p>
+          <div class="timeline-stack">
+            <span>React</span><span>Electron</span><span>GraphQL</span><span>SQLite</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal reveal-delay-2">
+        <div class="timeline-left">
+          <div class="timeline-date">2020 — 2021</div>
+          <div class="timeline-dot"></div>
+        </div>
+        <div class="timeline-right">
+          <div class="timeline-role">UI Engineer</div>
+          <div class="timeline-company">Figma <span class="timeline-badge">Contract</span></div>
+          <p class="timeline-desc">Contracted to build interactive prototyping tools and canvas rendering optimisations. Improved frame render time by 40% using WebGL-accelerated compositing and lazy evaluation of component trees.</p>
+          <div class="timeline-stack">
+            <span>WebGL</span><span>Canvas API</span><span>C++</span><span>TypeScript</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal reveal-delay-3">
+        <div class="timeline-left">
+          <div class="timeline-date">2019 — 2020</div>
+          <div class="timeline-dot"></div>
+        </div>
+        <div class="timeline-right">
+          <div class="timeline-role">Frontend Developer</div>
+          <div class="timeline-company">Freelance <span class="timeline-badge">Freelance</span></div>
+          <p class="timeline-desc">Delivered 12 client projects spanning e-commerce, SaaS dashboards, and marketing sites. Built a reputation for pixel-perfect implementations and on-time delivery. Clients included 3 YC-backed startups.</p>
+          <div class="timeline-stack">
+            <span>Vue</span><span>Nuxt</span><span>Laravel</span><span>Shopify</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <p class="section-label reveal">What I Do</p>
+    <h2 class="reveal reveal-delay-1">How I can help.</h2>
+    <div class="services-grid">
+
+      <div class="service-card reveal">
+        <div class="service-icon">⬡</div>
+        <div class="service-title">Frontend Development</div>
+        <p class="service-desc">Pixel-perfect, performant UIs built with React, Next.js, and TypeScript. I care about bundle size, Core Web Vitals, and accessible markup as much as the visuals.</p>
+        <ul class="service-list">
+          <li>React / Next.js / Remix</li>
+          <li>Animation & micro-interactions</li>
+          <li>Performance optimisation</li>
+          <li>Component libraries & design systems</li>
+        </ul>
+      </div>
+
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon">◈</div>
+        <div class="service-title">Full-Stack Engineering</div>
+        <p class="service-desc">End-to-end product builds from database schema to deployed infrastructure. I use the right tool for the job, not just the trendy one.</p>
+        <ul class="service-list">
+          <li>Node.js / Python APIs</li>
+          <li>PostgreSQL / Redis / MongoDB</li>
+          <li>AWS / Vercel / Fly.io</li>
+          <li>Auth, payments, webhooks</li>
+        </ul>
+      </div>
+
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon">◎</div>
+        <div class="service-title">UI/UX Design</div>
+        <p class="service-desc">From wireframes to high-fidelity prototypes. I design in Figma with a developer mindset — so what gets designed actually gets built, without compromise.</p>
+        <ul class="service-list">
+          <li>Product & interface design</li>
+          <li>Design systems & tokens</li>
+          <li>Interactive Figma prototypes</li>
+          <li>User flow & information architecture</li>
+        </ul>
+      </div>
+
+      <div class="service-card reveal reveal-delay-3">
+        <div class="service-icon">⊕</div>
+        <div class="service-title">Technical Consulting</div>
+        <p class="service-desc">Architecture reviews, performance audits, and team coaching. I've helped early-stage teams avoid costly rewrites and helped scaling teams ship faster.</p>
+        <ul class="service-list">
+          <li>Codebase & architecture audits</li>
+          <li>Tech stack selection</li>
+          <li>Engineering team mentoring</li>
+          <li>Code review & standards setup</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials">
+    <p class="section-label reveal">Kind Words</p>
+    <h2 class="reveal reveal-delay-1">What clients say.</h2>
+    <div class="testimonials-grid">
+
+      <div class="testimonial-card reveal">
+        <div class="testimonial-quote">"</div>
+        <p class="testimonial-text">Alex rebuilt our entire checkout flow in 6 weeks. The result was a 34% drop in cart abandonment and the cleanest codebase our team has ever inherited. An absolute pro.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">MK</div>
+          <div>
+            <div class="testimonial-name">Marcus Klein</div>
+            <div class="testimonial-role">CTO, ShopFlow Inc.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal reveal-delay-1">
+        <div class="testimonial-quote">"</div>
+        <p class="testimonial-text">Rare to find someone who can go from a Figma frame to a polished, animated, production-ready component in the same afternoon. Alex does it consistently.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">SR</div>
+          <div>
+            <div class="testimonial-name">Sophia Reyes</div>
+            <div class="testimonial-role">Head of Design, Linear</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal reveal-delay-2">
+        <div class="testimonial-quote">"</div>
+        <p class="testimonial-text">We hired Alex for a 3-month contract and extended twice. He shipped the roadmap feature that became our most-requested item — on time and under budget.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">JT</div>
+          <div>
+            <div class="testimonial-name">James Thornton</div>
+            <div class="testimonial-role">Co-founder, Databoard</div>
+          </div>
         </div>
       </div>
 
@@ -174,19 +352,62 @@
   <section id="contact">
     <p class="section-label reveal">Let's Connect</p>
     <h2 class="reveal reveal-delay-1">Got a project?<br/><span>Let's talk.</span></h2>
-    <p class="reveal reveal-delay-2">Open to freelance, full-time roles, and interesting collaborations. Don't be shy.</p>
-    <div class="contact-links reveal reveal-delay-3">
-      <a href="mailto:alex@example.com" class="contact-link">✉ Email</a>
-      <a href="#" class="contact-link">⟨/⟩ GitHub</a>
-      <a href="#" class="contact-link">in LinkedIn</a>
-      <a href="#" class="contact-link">𝕏 Twitter</a>
+    <p class="reveal reveal-delay-2">Open to freelance, full-time roles, and interesting collaborations. Response time is usually within 24 hours.</p>
+
+    <div class="contact-layout reveal reveal-delay-2">
+      <form class="contact-form" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Alex Johnson" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="alex@company.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" placeholder="Project enquiry / Job offer / Say hi" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Tell me about your project, timeline, and budget..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit">Send Message →</button>
+        <div class="form-success" id="formSuccess">Message sent! I'll be in touch within 24 hours.</div>
+      </form>
+
+      <div class="contact-info">
+        <div class="contact-info-item">
+          <div class="contact-info-label">Email</div>
+          <a href="mailto:alex@example.com" class="contact-info-value">alex@example.com</a>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-label">Location</div>
+          <div class="contact-info-value">San Francisco, CA</div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-label">Availability</div>
+          <div class="contact-info-value"><span class="avail-dot"></span> Available from Jan 2025</div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-label">Socials</div>
+          <div class="contact-socials">
+            <a href="#" class="contact-social-link">GitHub</a>
+            <a href="#" class="contact-social-link">LinkedIn</a>
+            <a href="#" class="contact-social-link">Twitter / X</a>
+            <a href="#" class="contact-social-link">Dribbble</a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 <span class="footer-accent">Alex.dev</span> — All rights reserved.</p>
-    <p class="footer-muted">Designed & built with care.</p>
+    <p>© 2025 <span class="footer-accent">Alex Carter</span> — All rights reserved.</p>
+    <p class="footer-muted">Designed & built with care in San Francisco.</p>
   </footer>
 
   <script src="script.js"></script>

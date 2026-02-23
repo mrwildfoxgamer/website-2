@@ -89,6 +89,29 @@ const statObserver = new IntersectionObserver(entries => {
 
 document.querySelectorAll('.stat-num').forEach(el => statObserver.observe(el));
 
+// Contact Form
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const btn = contactForm.querySelector('.form-submit');
+    btn.textContent = 'Sending...';
+    btn.style.opacity = '0.6';
+    setTimeout(() => {
+      btn.textContent = 'Sent ✓';
+      btn.style.background = '#fff';
+      document.getElementById('formSuccess').classList.add('visible');
+      contactForm.reset();
+      setTimeout(() => {
+        btn.textContent = 'Send Message →';
+        btn.style.opacity = '1';
+        btn.style.background = '';
+        document.getElementById('formSuccess').classList.remove('visible');
+      }, 4000);
+    }, 1200);
+  });
+}
+
 // Nav Active State on Scroll
 const sections = document.querySelectorAll('section[id], div[id]');
 window.addEventListener('scroll', () => {
