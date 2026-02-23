@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Nav -->
+  <nav>
+    <a href="#" class="logo">Alex.dev</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#work" class="mobile-link">Work</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-bg-text">FOLIO</div>
+    <div class="hero-content">
+      <div class="hero-tag">Available for work · 2025</div>
+      <h1>Creative<br/><em>Developer</em><br/>& Designer</h1>
+      <p class="hero-sub">I build interfaces that feel alive — merging precise engineering with intentional design to create digital experiences worth remembering.</p>
+      <div class="hero-cta">
+        <a href="#work" class="btn btn-primary">View Work ↓</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="about-image-wrap reveal">
+      <div class="about-img-placeholder">
+        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+          <circle cx="12" cy="7" r="4"/>
+        </svg>
+      </div>
+    </div>
+    <div class="about-text">
+      <p class="section-label reveal">About Me</p>
+      <h2 class="reveal reveal-delay-1">Crafting digital<br/>experiences with<br/>purpose.</h2>
+      <p class="reveal reveal-delay-2">I'm a full-stack developer with 5+ years of experience turning complex problems into elegant solutions. I care deeply about the intersection of design and engineering.</p>
+      <p class="reveal reveal-delay-2">When I'm not coding, I'm exploring generative art, typography, and how digital spaces shape human behavior.</p>
+      <div class="skills-grid reveal reveal-delay-3">
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">TypeScript</span>
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">Next.js</span>
+        <span class="skill-tag">Three.js</span>
+        <span class="skill-tag">Figma</span>
+        <span class="skill-tag">PostgreSQL</span>
+        <span class="skill-tag">AWS</span>
+        <span class="skill-tag">CSS / Motion</span>
+        <span class="skill-tag">Python</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <div id="stats">
+    <div class="stat-item reveal">
+      <div class="stat-num" data-target="50">0</div>
+      <div class="stat-label">Projects Delivered</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-1">
+      <div class="stat-num" data-target="5">0</div>
+      <div class="stat-label">Years Experience</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-2">
+      <div class="stat-num" data-target="30">0</div>
+      <div class="stat-label">Happy Clients</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-3">
+      <div class="stat-num" data-target="99">0</div>
+      <div class="stat-label">Lighthouse Score</div>
+    </div>
+  </div>
+
+  <!-- Work -->
+  <section id="work">
+    <p class="section-label reveal">Selected Work</p>
+    <h2 class="reveal reveal-delay-1">Things I've built.</h2>
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <div class="project-num">01 / 04</div>
+        <div class="project-arrow">↗</div>
+        <div class="project-img">
+          <div class="project-img-inner">🛒</div>
+        </div>
+        <div class="project-title">ShopFlow</div>
+        <div class="project-desc">A next-gen e-commerce platform with real-time inventory, AI-powered recommendations, and sub-100ms checkout.</div>
+        <div class="project-tags">
+          <span class="project-tag">Next.js</span>
+          <span class="project-tag">Stripe</span>
+          <span class="project-tag">PostgreSQL</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-num">02 / 04</div>
+        <div class="project-arrow">↗</div>
+        <div class="project-img">
+          <div class="project-img-inner">📊</div>
+        </div>
+        <div class="project-title">Databoard</div>
+        <div class="project-desc">Real-time analytics dashboard for SaaS companies. Handles 10M+ events/day with live charts and anomaly detection.</div>
+        <div class="project-tags">
+          <span class="project-tag">React</span>
+          <span class="project-tag">D3.js</span>
+          <span class="project-tag">WebSockets</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-2">
+        <div class="project-num">03 / 04</div>
+        <div class="project-arrow">↗</div>
+        <div class="project-img">
+          <div class="project-img-inner">🎨</div>
+        </div>
+        <div class="project-title">Canvas AI</div>
+        <div class="project-desc">A browser-based generative art tool using ML models to create unique visual compositions from text prompts.</div>
+        <div class="project-tags">
+          <span class="project-tag">Three.js</span>
+          <span class="project-tag">WebGL</span>
+          <span class="project-tag">Python</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-3">
+        <div class="project-num">04 / 04</div>
+        <div class="project-arrow">↗</div>
+        <div class="project-img">
+          <div class="project-img-inner">💬</div>
+        </div>
+        <div class="project-title">ThreadSync</div>
+        <div class="project-desc">Team communication tool with end-to-end encryption, threads, and asynchronous video messages.</div>
+        <div class="project-tags">
+          <span class="project-tag">React Native</span>
+          <span class="project-tag">Node.js</span>
+          <span class="project-tag">WebRTC</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <p class="section-label reveal">Let's Connect</p>
+    <h2 class="reveal reveal-delay-1">Got a project?<br/><span>Let's talk.</span></h2>
+    <p class="reveal reveal-delay-2">Open to freelance, full-time roles, and interesting collaborations. Don't be shy.</p>
+    <div class="contact-links reveal reveal-delay-3">
+      <a href="mailto:alex@example.com" class="contact-link">✉ Email</a>
+      <a href="#" class="contact-link">⟨/⟩ GitHub</a>
+      <a href="#" class="contact-link">in LinkedIn</a>
+      <a href="#" class="contact-link">𝕏 Twitter</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 <span class="footer-accent">Alex.dev</span> — All rights reserved.</p>
+    <p class="footer-muted">Designed & built with care.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
